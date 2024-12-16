@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - MediQuick</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf1eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+        }
+        h1 {
+            color: #b80000;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .input-box {
+            display: flex;
+            align-items: center;
+            border: 2px solid #b80000;
+            border-radius: 8px;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #fff;
+        }
+        .input-box img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        input, select {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+            color: #555;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+        .radio-group label {
+            font-size: 16px;
+            color: #333;
+        }
+        button {
+            background-color: #b80000;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            padding: 10px;
+            width: 100%;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #990000;
+        }
+        p a {
+            color: #b80000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <h1>Register</h1>
+        <p>Please register yourself to continue with the amazing experience!</p>
+        <!-- Name Input -->
+        <div class="input-box">
+            <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="Name Icon">
+            <input type="text" placeholder="Name">
+        </div>
+        <!-- Email Input -->
+        <div class="input-box">
+            <img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" alt="Email Icon">
+            <input type="email" placeholder="Email">
+        </div>
+        <!-- Gender Selection -->
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+        </div>
+        <!-- Phone Number Input -->
+        <div class="input-box">
+            <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone Icon">
+            <input type="text" placeholder="(without +60)">
+        </div>
+        <!-- Password Input -->
+        <div class="input-box">
+            <img src="https://img.icons8.com/ios-filled/50/000000/lock.png" alt="Password Icon">
+            <input type="password" placeholder="Password must be 6 character">
+        </div>
+        <!-- Confirm Password Input -->
+        <div class="input-box">
+            <img src="https://img.icons8.com/ios-filled/50/000000/lock.png" alt="Password Icon">
+            <input type="password" placeholder="Confirm Password">
+        </div>
+        <!-- Register Button -->
+        <button onclick="window.location.href='animation.html'">Register</button>
+        <!-- Sign In Link -->
+        <p>Already have an account? <a href="mediquick.html">Sign in</a></p>
+    </div>
+</body>
+</html>
